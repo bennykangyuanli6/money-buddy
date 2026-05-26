@@ -276,7 +276,7 @@ def view_long_term_goal(income_records, spending_records):
 
 def show_menu():
     print(
-        "----- Saving Goal Assistant -----\n"
+        "----- Money Buddy -----\n"
         "1. Manage income records\n"
         "2. View income records\n"
         "3. Manage spending records\n"
@@ -292,7 +292,7 @@ def main():
     income_records = load_records(INCOME_FILE)
     spending_records = load_records(SPENDING_FILE)
 
-    print("Welcome to Saving Goal Assistant!")
+    print("Welcome to Money Buddy!")
     print("This program helps you track income, spending, and saving.\n")
 
     running = True
@@ -317,7 +317,7 @@ def main():
         elif choice == "7":
             view_long_term_goal(income_records, spending_records)
         elif choice == "8":
-            print("\nThank you for using Saving Goal Assistant. Goodbye!")
+            print("\nThank you for using Money Buddy. Goodbye!")
             running = False
         else:
             print("\nInvalid option. Please choose a number from 1 to 8.\n")
